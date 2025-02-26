@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8df98de37f7fb5dfbc8f6937d584c05f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8df98de37f7fb5dfbc8f6937d584c05f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8df98de37f7fb5dfbc8f6937d584c05f = L.map(
+                "map_8df98de37f7fb5dfbc8f6937d584c05f",
+                {
+                    center: [37.0902, -95.7129],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0cea19480a06248d28c077e7c064daa7 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8df98de37f7fb5dfbc8f6937d584c05f);
+        
+    
+            var marker_71915bf12057d1a17f064d368dd65d9c = L.marker(
+                [37.7749, -122.42139999999999],
+                {}
+            ).addTo(map_8df98de37f7fb5dfbc8f6937d584c05f);
+        
+    
+        var popup_4ece976061fb33735db6dab0764e57a8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d05128da9b2b22be1d3647dc74117727 = $(`<div id="html_d05128da9b2b22be1d3647dc74117727" style="width: 100.0%; height: 100.0%;">UCSF<br>Senior Manager, Business Development, Licensing<br>Salary: $147,500 - $232,200</div>`)[0];
+            popup_4ece976061fb33735db6dab0764e57a8.setContent(html_d05128da9b2b22be1d3647dc74117727);
+        
+
+        marker_71915bf12057d1a17f064d368dd65d9c.bindPopup(popup_4ece976061fb33735db6dab0764e57a8)
+        ;
+
+        
+    
+    
+            marker_71915bf12057d1a17f064d368dd65d9c.bindTooltip(
+                `<div>
+                     UCSF
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4eb6768914c483ffafc232e841097e63 = L.marker(
+                [37.4852, -122.2384],
+                {}
+            ).addTo(map_8df98de37f7fb5dfbc8f6937d584c05f);
+        
+    
+        var popup_a110a13c2508c687913841961723794f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_312c3ba2d990c388ef52693b09a0873d = $(`<div id="html_312c3ba2d990c388ef52693b09a0873d" style="width: 100.0%; height: 100.0%;">Stanford University<br>Licensing Manager, Physical Sciences<br>Salary: $141,491 - $168,000</div>`)[0];
+            popup_a110a13c2508c687913841961723794f.setContent(html_312c3ba2d990c388ef52693b09a0873d);
+        
+
+        marker_4eb6768914c483ffafc232e841097e63.bindPopup(popup_a110a13c2508c687913841961723794f)
+        ;
+
+        
+    
+    
+            marker_4eb6768914c483ffafc232e841097e63.bindTooltip(
+                `<div>
+                     Stanford University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_691c64b02f4d88a482579abdb71d05f0 = L.marker(
+                [38.4404, -122.7161],
+                {}
+            ).addTo(map_8df98de37f7fb5dfbc8f6937d584c05f);
+        
+    
+        var popup_ff030642e1b69e8695756ba5c43dcef2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bc860aef4eaed79105fb9de7f96cf805 = $(`<div id="html_bc860aef4eaed79105fb9de7f96cf805" style="width: 100.0%; height: 100.0%;">Medtronic<br>Sr. Intellectual Property Engineering Program Manager (SH&A)<br>Salary: $179,200 - $268,800</div>`)[0];
+            popup_ff030642e1b69e8695756ba5c43dcef2.setContent(html_bc860aef4eaed79105fb9de7f96cf805);
+        
+
+        marker_691c64b02f4d88a482579abdb71d05f0.bindPopup(popup_ff030642e1b69e8695756ba5c43dcef2)
+        ;
+
+        
+    
+    
+            marker_691c64b02f4d88a482579abdb71d05f0.bindTooltip(
+                `<div>
+                     Medtronic
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4d3d4eba678086fafd26bd8d6135d7ab = L.marker(
+                [30.2672, -97.7451],
+                {}
+            ).addTo(map_8df98de37f7fb5dfbc8f6937d584c05f);
+        
+    
+        var popup_f855821ebe3789012c46b0202cbbc21d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3aa07cd22ea90c1b734f36659c209f09 = $(`<div id="html_3aa07cd22ea90c1b734f36659c209f09" style="width: 100.0%; height: 100.0%;">Meta<br>Program Manager, IP Operations<br>Salary: $97,000 - $139,000</div>`)[0];
+            popup_f855821ebe3789012c46b0202cbbc21d.setContent(html_3aa07cd22ea90c1b734f36659c209f09);
+        
+
+        marker_4d3d4eba678086fafd26bd8d6135d7ab.bindPopup(popup_f855821ebe3789012c46b0202cbbc21d)
+        ;
+
+        
+    
+    
+            marker_4d3d4eba678086fafd26bd8d6135d7ab.bindTooltip(
+                `<div>
+                     Meta
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_309449ab0f24782fba432c0d01327cd3 = L.marker(
+                [37.5407, -77.438],
+                {}
+            ).addTo(map_8df98de37f7fb5dfbc8f6937d584c05f);
+        
+    
+        var popup_49555534e5e8bcb44e7d0f34b0336388 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6df578fc3c176b1b0bef12dd8ce57666 = $(`<div id="html_6df578fc3c176b1b0bef12dd8ce57666" style="width: 100.0%; height: 100.0%;">Virginia Innovation Partnership Corporation<br>DIRECTOR UNIVERSITY COMMERCIALIZATION PROGRAMS<br>Salary: </div>`)[0];
+            popup_49555534e5e8bcb44e7d0f34b0336388.setContent(html_6df578fc3c176b1b0bef12dd8ce57666);
+        
+
+        marker_309449ab0f24782fba432c0d01327cd3.bindPopup(popup_49555534e5e8bcb44e7d0f34b0336388)
+        ;
+
+        
+    
+    
+            marker_309449ab0f24782fba432c0d01327cd3.bindTooltip(
+                `<div>
+                     Virginia Innovation Partnership Corporation
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8fe185cb7e2351e4bfafa4b093667e83 = L.marker(
+                [37.5387, -77.436],
+                {}
+            ).addTo(map_8df98de37f7fb5dfbc8f6937d584c05f);
+        
+    
+        var popup_6a76f04f20e67b46a8150a2b039e0f0e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_27d6acce007d14b0f4dee2f4f4910ccb = $(`<div id="html_27d6acce007d14b0f4dee2f4f4910ccb" style="width: 100.0%; height: 100.0%;">Altria<br>Senior Manager Intellectual Property Development<br>Salary: $124,900 - $190,450</div>`)[0];
+            popup_6a76f04f20e67b46a8150a2b039e0f0e.setContent(html_27d6acce007d14b0f4dee2f4f4910ccb);
+        
+
+        marker_8fe185cb7e2351e4bfafa4b093667e83.bindPopup(popup_6a76f04f20e67b46a8150a2b039e0f0e)
+        ;
+
+        
+    
+    
+            marker_8fe185cb7e2351e4bfafa4b093667e83.bindTooltip(
+                `<div>
+                     Altria
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_df1fd8e6b2fd875100d46662d0cb9b1b = L.marker(
+                [37.0299, -76.3472],
+                {}
+            ).addTo(map_8df98de37f7fb5dfbc8f6937d584c05f);
+        
+    
+        var popup_eff1e36bfa42d262f8c07ca49cd49186 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e8ac073e5052c33f075a09bf63610a7d = $(`<div id="html_e8ac073e5052c33f075a09bf63610a7d" style="width: 100.0%; height: 100.0%;">NASA<br>Licensing Manager<br>Salary: $106,950 - $164,296</div>`)[0];
+            popup_eff1e36bfa42d262f8c07ca49cd49186.setContent(html_e8ac073e5052c33f075a09bf63610a7d);
+        
+
+        marker_df1fd8e6b2fd875100d46662d0cb9b1b.bindPopup(popup_eff1e36bfa42d262f8c07ca49cd49186)
+        ;
+
+        
+    
+    
+            marker_df1fd8e6b2fd875100d46662d0cb9b1b.bindTooltip(
+                `<div>
+                     NASA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

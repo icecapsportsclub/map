@@ -252,6 +252,13 @@
                  </div>`,
                 {"sticky": true}
             );
+
+        var marker_coinbase = L.marker([37.3990, -77.0235]).addTo(map_8df98de37f7fb5dfbc8f6937d584c05f); // Example coordinates for Toano, Virginia
+        var popup_coinbase = L.popup({"maxWidth": "100%"});
+        var html_coinbase = $(`<div id="html_coinbase" style="width: 100.0%; height: 100.0%;">Coinbase<br>Business Operations & Strategy Associate<br>Salary: $130,900 - $154,000</div>`)[0];
+        popup_coinbase.setContent(html_coinbase);
+        marker_coinbase.bindPopup(popup_coinbase);
+        marker_coinbase.bindTooltip(`<div>Coinbase</div>`, {"sticky": true});
         
 </script>
 </html>
